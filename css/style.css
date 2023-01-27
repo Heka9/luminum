@@ -913,12 +913,13 @@ h6 {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    row-gap: 13.25rem;
+    row-gap: 0;
   }
 
   .main-block__replies {
     -ms-flex-item-align: end;
         align-self: flex-end;
+    margin-bottom: 13.25rem;
   }
 
   .main-block__phone-decor {
