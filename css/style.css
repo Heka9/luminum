@@ -365,10 +365,6 @@ h6 {
   margin-bottom: 7.5rem;
 }
 
-.main-block_download .main-block__container {
-  position: relative;
-}
-
 .main-block__container h1 {
   visibility: hidden;
   position: absolute;
@@ -376,6 +372,10 @@ h6 {
   height: auto;
   top: 0;
   left: 0;
+}
+
+.main-block_download .main-block__container {
+  position: relative;
 }
 
 .main-block__content {
@@ -525,6 +525,10 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: transparent;
+  -webkit-transition: background-color 0.3s ease 0s;
+  -o-transition: background-color 0.3s ease 0s;
+  transition: background-color 0.3s ease 0s;
 }
 
 .button span {
@@ -532,10 +536,23 @@ h6 {
   font-weight: 500;
   line-height: 1.3333333333;
   color: #ffffff;
+  -webkit-transition: all 0.3 color ease 0s;
+  -o-transition: all 0.3 color ease 0s;
+  transition: all 0.3 color ease 0s;
 }
 
 .button svg {
   fill: #fff;
+  -webkit-transition: fill 0.3s ease 0s;
+  -o-transition: fill 0.3s ease 0s;
+  transition: fill 0.3s ease 0s;
+}
+
+.button svg path {
+  fill: #fff;
+  -webkit-transition: fill 0.3s ease 0s;
+  -o-transition: fill 0.3s ease 0s;
+  transition: fill 0.3s ease 0s;
 }
 
 .info-block.main-block__replies {
@@ -2084,5 +2101,21 @@ h6 {
   .header__button:hover {
     background-color: transparent;
     color: #171717;
+  }
+
+  .button:hover {
+    background-color: #fff;
+  }
+
+  .button:hover span {
+    color: #171717;
+  }
+
+  .button:hover svg {
+    fill: #171717;
+  }
+
+  .button:hover svg path {
+    fill: #171717;
   }
 }
